@@ -3,233 +3,170 @@ html, body {
   width: 1280px;
   height: 1200px;
   overflow: hidden;
-  background: #1a0828;
   font-family: Lato, "Liberation Sans", sans-serif;
   color: #1a1420;
-}
-body {
-  background: linear-gradient(168deg, #1a0830 0%, #6a1458 28%, #C41C83 58%, #ff7a3c 86%, #ffc24a 100%);
+  background: linear-gradient(168deg, #1a0830 0%, #C41C83 55%, #ff8a3d 100%);
 }
 .card {
   position: absolute;
-  left: 26px;
-  top: 26px;
-  width: 1228px;
-  height: 1148px;
-  background: #fff8ee;
-  border-radius: 26px;
+  left: 20px;
+  top: 20px;
+  width: 1240px;
+  height: 1160px;
+  background: #fffaf3;
+  border-radius: 28px;
   overflow: hidden;
   display: flex;
   flex-direction: column;
-  box-shadow: 0 16px 36px rgba(0, 0, 0, 0.38);
+  box-shadow: 0 18px 40px rgba(0,0,0,0.28);
 }
 .hd {
   background: #16141c;
   color: #fff;
-  padding: 26px 36px 22px;
+  height: 148px;
+  padding: 22px 32px;
   display: flex;
   justify-content: space-between;
-  align-items: flex-end;
-  gap: 24px;
+  align-items: center;
 }
 .hd h1 {
   font-family: "Roboto Condensed", Lato, sans-serif;
   font-weight: 900;
-  font-size: 62px;
-  letter-spacing: -0.6px;
-  line-height: 0.88;
+  font-size: 64px;
+  letter-spacing: 0.5px;
   text-transform: uppercase;
+  line-height: 0.9;
 }
 .hd .sub {
   margin-top: 8px;
-  font-family: "Roboto Condensed", Lato, sans-serif;
-  font-weight: 700;
-  font-size: 32px;
-  letter-spacing: 2.4px;
+  font-weight: 800;
+  font-size: 26px;
+  letter-spacing: 1px;
   text-transform: uppercase;
-  color: #ffd0ea;
+  color: #f3c6de;
 }
 .hd .right {
   text-align: right;
   font-family: "Roboto Condensed", Lato, sans-serif;
   font-weight: 900;
-  font-size: 40px;
-  line-height: 0.95;
-  letter-spacing: 1px;
+  font-size: 36px;
+  line-height: 1.05;
   text-transform: uppercase;
-  color: #fff;
-}
-.hd .right span {
-  display: block;
-  margin-top: 6px;
-  font-weight: 700;
-  font-size: 28px;
-  letter-spacing: 2px;
-  color: #ffb4dc;
 }
 .body {
-  position: relative;
   flex: 1;
-  padding: 22px 36px 8px;
+  padding: 22px 36px 210px;
   display: flex;
   flex-direction: column;
-  min-height: 0;
 }
-.top { display: flex; justify-content: space-between; align-items: flex-start; gap: 12px; }
 .kicker {
   font-family: "Roboto Condensed", Lato, sans-serif;
   font-weight: 900;
-  font-size: 44px;
-  letter-spacing: 0.4px;
-  line-height: 1;
+  font-size: 52px;
+  line-height: 0.92;
   text-transform: uppercase;
 }
 .kicker em { font-style: normal; color: #C41C83; }
 .when {
-  margin-top: 4px;
-  font-family: "Roboto Condensed", Lato, sans-serif;
-  font-weight: 700;
-  font-size: 32px;
-  letter-spacing: 1px;
-  color: #5c4a58;
-  text-transform: uppercase;
-  max-width: 760px;
-}
-.checks {
-  display: flex;
-  gap: 22px;
-  margin-top: 12px;
-  font-family: "Roboto Condensed", Lato, sans-serif;
-  font-weight: 900;
-  font-size: 36px;
+  margin-top: 6px;
+  font-weight: 800;
+  font-size: 28px;
   letter-spacing: 0.4px;
+  text-transform: uppercase;
+  color: #5c4a58;
 }
-.checks .on { color: #d0122d; }
-.rows {
-  margin-top: 14px;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-evenly;
-  flex: 1;
-}
+.rows { margin-top: 14px; }
 .row {
   display: flex;
-  align-items: center;
   justify-content: space-between;
-  gap: 20px;
+  align-items: center;
+  gap: 18px;
   border-top: 3px solid #eadccb;
-  padding: 11px 0 10px;
-  min-height: 78px;
-}
-.row:first-child { border-top: 0; padding-top: 6px; }
-.row .what {
-  font-family: Lato, sans-serif;
-  font-weight: 700;
+  min-height: 72px;
+  font-weight: 800;
   font-size: 36px;
-  line-height: 1.12;
-  letter-spacing: -0.2px;
+  line-height: 1.05;
 }
-.row .what b {
-  font-family: "Roboto Condensed", Lato, sans-serif;
-  font-weight: 900;
-  font-size: 36px;
-}
-.row .amt {
+.row b { font-family: "Roboto Condensed", Lato, sans-serif; font-weight: 900; }
+.amt {
   flex: 0 0 auto;
   font-family: "Roboto Condensed", Lato, sans-serif;
   font-weight: 900;
-  font-size: 42px;
-  letter-spacing: -0.3px;
-  text-align: right;
-  line-height: 1;
-  color: #1a1420;
+  font-size: 40px;
 }
 .total {
   display: flex;
-  align-items: baseline;
   justify-content: space-between;
-  border-top: 4px solid #1a1420;
-  padding: 10px 0 6px;
-  margin-top: 2px;
+  align-items: baseline;
+  border-top: 5px solid #1a1420;
+  margin-top: 6px;
+  padding: 10px 0 0 520px;
 }
 .total .lab {
   font-family: "Roboto Condensed", Lato, sans-serif;
   font-weight: 900;
-  font-size: 36px;
-  letter-spacing: 1px;
+  font-size: 40px;
   text-transform: uppercase;
-  max-width: 620px;
+  max-width: 640px;
   line-height: 0.95;
 }
 .total .num {
   font-family: "Roboto Condensed", Lato, sans-serif;
   font-weight: 900;
-  font-size: 72px;
-  letter-spacing: -1px;
+  font-size: 64px;
   line-height: 0.9;
-}
-.stamp {
-  position: static;
-  transform: rotate(-8deg);
-  display: inline-block;
-  width: auto;
-  border: 7px solid #d0122d;
-  color: #d0122d;
-  font-family: "Roboto Condensed", Lato, sans-serif;
-  font-weight: 900;
-  font-size: 46px;
-  letter-spacing: 1px;
-  line-height: 0.88;
-  text-transform: uppercase;
-  text-align: center;
-  padding: 8px 12px 10px;
-  background: rgba(255, 248, 238, 0.92);
-  box-shadow: inset 0 0 0 3px #d0122d;
-  flex: 0 0 auto;
-  margin-top: 2px;
 }
 .ft {
   background: #C41C83;
   color: #fff;
+  height: 268px;
+  padding: 18px 36px 18px 540px;
   display: flex;
-  align-items: center;
-  min-height: 276px;
-  padding: 16px 28px 16px 16px;
-  gap: 12px;
-  overflow: hidden;
+  flex-direction: column;
+  justify-content: center;
 }
-.ft .ghost {
-  width: 244px;
-  height: 244px;
-  margin: 0;
-  flex: 0 0 auto;
-}
-.pitch { flex: 1; min-width: 0; }
-.pitch h2 {
+.pay {
   font-family: "Roboto Condensed", Lato, sans-serif;
   font-weight: 900;
-  font-size: 48px;
-  line-height: 0.92;
-  letter-spacing: -0.4px;
+  font-size: 34px;
+  letter-spacing: 0.2px;
+  line-height: 1.05;
   text-transform: uppercase;
 }
-.pitch p {
+.ft h2 {
   margin-top: 8px;
-  font-family: Lato, sans-serif;
-  font-weight: 700;
-  font-size: 32px;
-  line-height: 1.15;
+  font-family: "Roboto Condensed", Lato, sans-serif;
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 0.92;
+  text-transform: uppercase;
 }
 .pill {
   display: inline-block;
-  margin-top: 10px;
+  margin-top: 12px;
   background: #16141c;
   color: #fff;
-  font-family: Lato, sans-serif;
   font-weight: 900;
-  font-size: 40px;
-  letter-spacing: -0.6px;
-  line-height: 1;
-  padding: 8px 16px 10px;
+  font-size: 36px;
+  padding: 6px 16px 8px;
   border-radius: 12px;
+  width: fit-content;
+}
+.ghost {
+  position: absolute;
+  left: 16px;
+  bottom: 12px;
+  width: 480px;
+  height: 480px;
+  z-index: 3;
+}
+.well {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 512px;
+  height: 500px;
+  background: #C41C83;
+  border-radius: 0 280px 0 0;
+  z-index: 2;
 }
