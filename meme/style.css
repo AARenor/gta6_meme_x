@@ -193,15 +193,15 @@ body {
   color: #fff;
   display: flex;
   align-items: center;
-  min-height: 240px;
-  padding: 0 28px 0 16px;
-  gap: 8px;
-  overflow: visible;
+  min-height: 276px;
+  padding: 16px 28px 16px 16px;
+  gap: 12px;
+  overflow: hidden;
 }
-.ft img {
-  width: 280px;
-  height: 280px;
-  margin-top: -48px;
+.ft .ghost {
+  width: 244px;
+  height: 244px;
+  margin: 0;
   flex: 0 0 auto;
 }
 .pitch { flex: 1; min-width: 0; }
